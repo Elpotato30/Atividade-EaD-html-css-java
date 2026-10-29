@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resident Evil (2026) - Avaliação do Filme</title>
+
+  <!-- Vincula o arquivo CSS responsável pela aparência da página -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com o título principal da página -->
+  <header>
+    <h1>Resident Evil (2026)</h1>
+    <p class="subtitulo">Avaliação do novo filme dirigido por Zach Cregger</p>
+  </header>
+
+  <main>
+
+    <!-- IMAGEM PRINCIPAL:
+         no Google Imagens, clique com o botão direito na imagem > "Copiar endereço da imagem"
+         e cole o link no lugar do texto dentro de src="...". -->
+    <figure>
+      <img src="https://psxbrasil.com.br/wp-content/uploads/2026/05/Resident-Evil-Filme.jpg" alt="Espaço para o pôster ou imagem principal do filme">
+      <figcaption>Poster do filme com a data de lançamento nos EUA</figcaption>
+    </figure>
+
+    <!-- Sinopse: dois parágrafos -->
+    <section>
+      <h2>Sobre o filme</h2>
+      <p>
+        Resident Evil é um filme de terror dirigido e co-escrito por Zach Cregger, o mesmo diretor de
+        "Noites Brutais" e "A Hora do Mal". Ele chegou aos cinemas em setembro de 2026 como uma
+        nova adaptação da famosa franquia de jogos da Capcom.
+      </p>
+      <p>
+        Em vez de repetir a história de um jogo, o longa conta uma trama original dentro do universo da série,
+        sem usar personagens clássicos como Leon Kennedy. A proposta é focar na tensão e no clima de
+        sobrevivência que marcaram os games.
+      </p>
+    </section>
+
+    <!-- Ficha técnica: lista que começa escondida e é exibida pelo botão -->
+    <section>
+      <h2>Ficha técnica</h2>
+      <button id="btnFicha" onclick="mostrarOcultarFicha()">Mostrar ficha técnica</button>
+
+      <ul id="ficha" class="oculto">
+        <li>Direção: Zach Cregger</li>
+        <li>Roteiro: Zach Cregger e Shay Hatten</li>
+        <li>Elenco: Austin Abrams, Zach Cherry, Kali Reis e Paul Walter Hauser</li>
+        <li>Estúdios: Columbia Pictures e Constantin Film</li>
+        <li>Estreia no Brasil: 17 de setembro de 2026</li>
+      </ul>
+    </section>
+
+    <!-- GALERIA: cole o link das imagens do Google no lugar do texto dentro de src="..." -->
+    <section>
+      <h2>Galeria</h2>
+      <div class="galeria">
+        <figure>
+          <img src="https://feira.tangerina.news/wp-content/uploads/2026/09/Austin-Abrams-resident-evil-2026-critica.jpg" alt="Espaço para imagem 1">
+          <figcaption>Bryan Hodukavich protagonista</figcaption>
+        </figure>
+        <figure>
+          <img src="https://m.media-amazon.com/images/M/MV5BYWFhZjBkODYtNmQxZS00MDhlLWJhNTAtOTZmYzE2MzgxYjc1XkEyXkFqcGc@._V1_QL75_UX263_.jpg alt="Espaço para imagem 2">
+          <figcaption>poster alternativo com bolsa verde</figcaption>
+        </figure>
+        <figure>
+          <img src="https://m.media-amazon.com/images/M/MV5BMGQwZmI3NjUtNjU0Zi00Nzc1LTllYzMtZmVjYjM3MmQzMzE1XkEyXkFqcGc@._V1_QL75_UX798_.jpg" alt="Espaço para imagem 3">
+          <figcaption>cidade de raccon city</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Avaliação: o usuário clica nas estrelas e a média é calculada pelo JavaScript -->
+    <section>
+      <h2>Minha avaliação</h2>
+      <p>Clique nas estrelas para dar sua nota em cada categoria:</p>
+
+      <div class="criterio">
+        <span>Direção</span>
+        <div class="estrelas" id="estrelas-direcao"></div>
+      </div>
+      <div class="criterio">
+        <span>Roteiro</span>
+        <div class="estrelas" id="estrelas-roteiro"></div>
+      </div>
+      <div class="criterio">
+        <span>Clima de terror</span>
+        <div class="estrelas" id="estrelas-terror"></div>
+      </div>
+      <div class="criterio">
+        <span>Fidelidade ao universo dos jogos</span>
+        <div class="estrelas" id="estrelas-fidelidade"></div>
+      </div>
+
+      <!-- A nota final aparece aqui depois do clique no botão -->
+      <p id="resultadoNota" class="caixa">Nota final: ainda não calculada.</p>
+      <button onclick="calcularNotaFinal()">Calcular nota final</button>
+    </section>
+
+    <!-- Opinião escrita: o texto digitado é mostrado na página pelo JavaScript -->
+    <section>
+      <h2>Minha opinião</h2>
+      <textarea id="campoOpiniao" rows="5" placeholder="Escreva aqui o que você achou do filme..."></textarea>
+      <div class="botoes">
+        <button onclick="publicarOpiniao()">Publicar opinião</button>
+      </div>
+      <p id="opiniaoPublicada" class="caixa oculto"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Página de fã feita para fins educacionais. Resident Evil é uma marca da Capcom.</p>
+  </footer>
+
+  <!-- Vincula o arquivo JavaScript (no final, para o HTML já estar carregado) -->
+  <script src="script.js"></script>
+</body>
+</html>
