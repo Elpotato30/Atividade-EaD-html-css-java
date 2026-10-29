@@ -17,7 +17,7 @@ As imagens usam links do Google nos campos `src` do HTML.
 O HTML monta a estrutura e o conteúdo: o título `<h1>`, os parágrafos da sinopse, as imagens, a lista da ficha técnica, as linhas de avaliação, o campo de opinião e os botões.
 
 **Onde você utilizou CSS e quais alterações ele realizou?**
-No arquivo `style.css`. Ele muda a cor de fundo da página, as cores e os tamanhos dos textos, personaliza os botões e as estrelas, organiza a galeria de imagens em colunas e dá cantos arredondados e sombra às imagens.
+Utilizei o css no arquivo `style.css`. Ele muda a cor de fundo da página, as cores e os tamanhos dos textos, personaliza os botões e as estrelas, organiza a galeria de imagens em colunas e dá cantos arredondados e sombra às imagens.
 
 **Onde você utilizou JavaScript e o que acontece quando ele é executado?**
 No arquivo `script.js`. Ao clicar nas estrelas, a nota da categoria é registrada e as estrelas ficam douradas. O botão "Calcular nota final" calcula a média das notas e mostra na tela. Outros botões mostram ou escondem a ficha técnica e publicam a opinião digitada.
