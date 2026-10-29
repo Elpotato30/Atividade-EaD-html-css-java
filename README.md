@@ -1,3 +1,4 @@
+Como acessar o site: https://elpotato30.github.io/Atividade-EaD-html-css-java/
 # Avaliação do filme Resident Evil (2026)
 
 Atividade de Programação Web (ADS, 1ª fase). Página de avaliação do filme Resident Evil (2026), feita com HTML, CSS e JavaScript.
